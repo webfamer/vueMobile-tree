@@ -5,7 +5,8 @@ import store from './store'
 import 'lib-flexible'
 import ViewUI from 'view-design';
 import 'view-design/dist/styles/iview.css';
-
+import './assets/css/reset.css'
+import './assets/css/border.css'
 Vue.config.productionTip = false
 Vue.use(ViewUI);
 
