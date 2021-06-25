@@ -1,55 +1,30 @@
 import request from './request.js'
 
-function checkTel(data){
+export function getGameData(data){
     return request({
-        url:'/api/register/'+data,
+        url:'/game/getGameContentList',
         method:'get',
+        data:data
     })
 }
-function getVerifyCode(data){
+export function getRankData(data){
     return request({
-        url:'/api/register/verifyCode/'+data,
+        url:'/game/getRank',
         method:'get',
+        data:data
     })
 }
-function register(data){
+export function saveResult(data){
     return request({
-        url:'/api/register',
+        url:'/game/saveResult',
         method:'post',
-        data
+        data:data
     })
 }
-function changePassword(data){
+export function getName(data){
     return request({
-        url:'/api/register',
-        method:'put',
-        data
-    })
-}
-function login(data){
-    return request({
-        url:'/api/login',
-        method:'post',
-        data
-    })
-}
-function getUserInfo(data){
-    return request({
-        url:'/api/user',
+        url:'/game/getRandomName',
         method:'get',
-        data
+        data:data
     })
-}
-
-function changeName(data){
-    return request({
-        url:'/api/user/username',
-        method:'put',
-        data
-    })
-}
-
-
-export default{
-    checkTel,getVerifyCode,register,changePassword,login,getUserInfo, changeName
 }

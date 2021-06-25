@@ -3,7 +3,7 @@ import qs from 'qs'
 
 // create an axios instance
 const service = axios.create({
-//   baseURL: 'http://47.106.181.101:8080',
+  // baseURL: '/api',
   timeout: 5000 // request timeout
 })
 
@@ -76,7 +76,7 @@ function http(config){
     // myAjax  {name:'zx',age:20} ==> name=zs&age=20
     // config.data = qs.stringify(config.data,{arrayFormat: 'repeat',allowDots: true});
     // console.log(config.data,'config.data')
-    config.params = config.data;
+    config.data = config.data;
   }else{
     config.params = config.data;
   }
