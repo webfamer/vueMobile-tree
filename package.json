@@ -12,7 +12,7 @@
     "lib-flexible": "^0.3.2",
     "postcss-px2rem": "^0.3.0",
     "postcss-pxtorem": "^4.0.1",
-    "qs": "^6.9.1",
+    "qs": "^6.9.7",
     "view-design": "^4.1.1",
     "vue": "^2.6.11",
     "vue-router": "^3.1.5",
